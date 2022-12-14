@@ -18,4 +18,8 @@ class Comment extends Model
     {
         $this->belongsTo(User::class);
     }
+
+    public function replies(){
+        $this->hasMany();
+    }
 }

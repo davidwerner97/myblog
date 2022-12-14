@@ -20848,7 +20848,7 @@ __webpack_require__.r(__webpack_exports__);
     AppLayout: _Layouts_AppLayout__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   props: {
-    post: Array
+    post: Object
   }
 });
 
