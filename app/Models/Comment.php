@@ -19,7 +19,14 @@ class Comment extends Model
         $this->belongsTo(User::class);
     }
 
-    public function replies(){
-        $this->hasMany();
+    public function parent_comment()
+    {
+        $this->belongsTo($this, 'parent_id', 'id');
+    }
+
+    public function replies()
+    {
+        $this->hasMany($this, 'parent_id', 'id');
+
     }
 }
